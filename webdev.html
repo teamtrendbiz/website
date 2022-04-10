@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111">
+    <title>TrendBiz | Services</title>
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <a href="index.html" class="nav-logo"><h1 class="logo-font">TrendBiz.</h1></a>
+            <div class="menu" id="menu">
+                <a href="index.html" class="menu-link">home</a>
+                <a href="#" class="menu-link" onmouseenter="openServices()">services
+                    <div class="services-menu" id="servicesMenu" onmouseleave="closeServices()">
+                        <a href="dmarketing.html" class="services-link">Digital Marketing</a>
+                        <a href="smarketing.html" class="services-link">Social Media Management</a>
+                        <a href="#" class="services-link">Website Development</a>
+                    </div>
+                </a>
+                <a href="index.html#clients" class="menu-link">our clients</a>
+                <a href="index.html#aboutus" class="menu-link">about us</a>
+                <a href="index.html#contact"><p class="hero-btn1">Get A Quote</p></a>
+            </div>
+            <svg id="menu-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24" onclick="toggleMenu()"><path id="menu-svg" d="M3,18H21M3,12H21M3,6H21" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+        </nav>
+    </header>
+
+    <div class="hero" onmouseenter="closeServices()">
+        <div class="hero-container webbg">
+            <div class="hero-content">
+                <h1>Website Development</h1>
+                <p>We develop 100% responsive and SEO friendly websites.</p>
+            </div>
+            <div class="service-btns">
+                <a href="#service-contact" class="service-cta"><p>Contact Us</p></a>
+                <a href="#content" class="read-more"><p>Read More</p></a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="title-div">
+        <h1 class="title-large">Why A Website Is Important?</h1>
+    </div>
+    <section id="content">
+        <div class="content-left">
+            <p data-aos="fade-right">
+                Living in the digital world, a website is crucial for any business.
+                If you have a business in bangalore or anywhere in the world and don’t have a website, you are probably losing out on opportunities for your business.
+                A website can be used to accomplish many different marketing strategies to help your business grow.
+                The web has a far more extensive reach than any other form of advertising.
+                Your website will be the center of your company’s online presence.
+                You can advertise your business around the web on social networking sites, forums and through pay-per-click advertising programs.
+            </p>
+            <br>
+            <br>
+            <p data-aos="fade-right">
+                Having a website and online presence strategy allows you to market your business online.
+                A website is also important because it helps to establish credibility as a business.
+                Websites usually provide a map and directions to the company’s shops or offices for visitors to find their location easily.
+            </p>
+            <br>
+            <br>
+            <p data-aos="fade-right">
+                When you provide good service or product, positive word-of-mouth can spread your business.
+                A website not only gives credibility but it also helps to give a positive impression that your company is bigger and more successful.
+                One of the great things about the internet is that the size of your company does not really matter. The website is more important for small businesses than the big one.
+                Websites are always available and accessible 24 hours a day. As a result, your customers and potential customers can visit your site to know the information about your new and upcoming products and services which is convenient for them.
+            </p>
+        </div>
+        <br><br>
+        <div class="content-right" id="service-contact">
+            <form action="" class="services-page-form webdev-form">
+                <h1 class="form-title">Get A Quote</h1>
+                <br>
+                <div class="contact-form-row">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Samuel Singh">
+                </div>
+                <div class="contact-form-row">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="9988776655">
+                </div>
+                <div class="contact-form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="name" id="name" placeholder="youremail@gmail.com">
+                </div>
+                <div class="contact-form-row">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                </div>
+                <button type="submit" class="form-submit"><svg id="send-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="20" height="20"><path id="send-svg" d="M3.69,8.75,19.61,3.06a1,1,0,0,1,1.33,1.33L15.25,20.31a1,1,0,0,1-1.95,0l-2.51-6.52a1,1,0,0,0-.6-.6L3.67,10.7A1,1,0,0,1,3.69,8.75Zm6.93,4.63,3-3" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>&nbsp;&nbsp;<p>SEND</p></button>
+            </form>
+            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ksrcyxgn.json" class="animation webdev-anim"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+        </div>
+    </section>
+
+    <div class="floating-icons">
+        <a href="tel:+918088500485"><img src="assets/img/telephone.png" alt="Call" class="floating-img"></a>
+        <a href="https://wa.me/918088500485"><img src="assets/img/whatsapp.png" alt="WhatsApp" class="floating-img"></a>
+        <a href="#"><img src="assets/img/instagram.png" alt="Instagram" class="floating-img"></a>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-column branding-column">
+                <div class="footer-branding">
+                    <h2 class="brand-name logo-font">TrendBiz.</h2>
+                </div>
+                <br>
+                <p class="footer-desc">We are a digital marketing company that aims to create brand awareness and bring more leads to our clients.<br>Let's grow together!</p>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Company</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="index.html#aboutus" class="footer-link">About Us</a>
+                <a href="index.html#contact" class="footer-link"">Contact</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Services</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="webdev.html" class="footer-link">Website Development</a>
+                <a href="dmarketing.html" class="footer-link">Digital Marketing</a>
+                <a href="smarketing.html" class="footer-link">Social Media Management</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Important</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="policy.html" class="footer-link">Terms & Conditions</a>
+                <a href="policy.html" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer-row">
+            <div class="social">
+                <p>&copy; Copyright 2022 TrendBiz - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
+</body>
+</html>
