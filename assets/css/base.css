@@ -64,6 +64,11 @@ a{
 }
 
 
+#hidden_iframe{
+    display: none;
+}
+
+
 .logo-font{
     font-size: 2rem;
     font-family: 'MuseoModerno', cursive !important;
@@ -295,6 +300,9 @@ footer{
 
 @media (max-width: 768px) {
 
+    .title-large{
+        font-size: 2.4rem;
+    }
     .title-medium{
         font-size: 1.5rem;
     }
