@@ -123,7 +123,7 @@
             </p>
         </div>
         <div class="content-right" id="service-contact">
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgHxWuEyRoTgwsCq7WUhpqFQH0XeBKCVuJKWi2sSoLzVB-mg/formResponse" class="services-page-form" method="post" target="hidden_iframe">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgHxWuEyRoTgwsCq7WUhpqFQH0XeBKCVuJKWi2sSoLzVB-mg/formResponse" class="services-page-form" method="post" target="hidden_iframe" onsubmit="openPopup()">
                 <h1 class="form-title">Get A Quote</h1>
                 <br>
                 <div class="contact-form-row">
@@ -144,6 +144,15 @@
                 <button type="submit" class="form-submit"><svg id="send-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="20" height="20"><path id="send-svg" d="M3.69,8.75,19.61,3.06a1,1,0,0,1,1.33,1.33L15.25,20.31a1,1,0,0,1-1.95,0l-2.51-6.52a1,1,0,0,0-.6-.6L3.67,10.7A1,1,0,0,1,3.69,8.75Zm6.93,4.63,3-3" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>&nbsp;&nbsp;<p>SEND</p></button>
             </form>
             <img src="assets/img/smarketing.png" alt="Social Media Marketing" class="marketingimg">
+        </div>
+    </section>
+    
+    <section id="popup-section">
+        <div class="popup">
+            <h1>Thank You!</h1>
+            <p>Our team has received your message, we'll get back to you soon.</p>
+            <img src="assets/img/popupimg.png" alt="Thank You!" class="popupimg">
+            <p class="close-btn" onclick="closePopup()">Close</p>
         </div>
     </section>
 
