@@ -6,7 +6,7 @@ var servicesVAr = 0;
 
 function toggleMenu(){
     if(navVar%2 == 0){
-        navBar.style.height = "45vh";
+        navBar.style.height = "55vh";
         menu.style.display = "flex";
         navVar = 1;
     }
