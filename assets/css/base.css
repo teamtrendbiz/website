@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.extra-space{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title-div{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+}
+.title-large{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.title-medium{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.title-medium--subheading{
+    color: darkslategray;
+    font-size: 1.5rem;
+}
+
+
+#hidden_iframe{
+    display: none;
+}
+
+
+.logo-font{
+    font-size: 2rem;
+    font-family: 'MuseoModerno', cursive !important;
+    color: #FFF;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    position: relative;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111;
+    color: #FFF;
+    transition: all .5s ease;
+}
+.menu{
+    position: relative;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-link{
+    padding: .5rem .75rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFF;
+    background: none;
+    border-radius: 24px;
+    transition: all .5s ease;
+}
+.menu-link:hover{
+    color: #000;
+    background: #FFF;
+}
+
+
+
+.services-menu{
+    position: absolute;
+    top: 10vh;
+    right: 35vw;
+    padding-bottom: 1rem;
+    width: 280px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+    transition: all .5s ease;
+    z-index: 5;
+}
+.services-link{
+    padding: .5rem .75rem;
+    width: inherit;
+    height: auto;
+    color: #111;
+    transition: all .5s ease;
+}
+.services-link:hover{
+    background-color: #111;
+    color: #FFF;
+}
+
+.hero-btn1{
+    width: auto;
+    height: auto;
+    padding: .5rem .75rem;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 24px;
+    transition: all .5s ease;
+}
+.hero-btn1:hover{
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, .25), -2px -2px 10px rgba(255, 255, 255, .25);
+}
+
+#menu-alt{
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    display: none;
+}
+#menu-svg{
+    stroke: #FFF;
+    fill: none;
+}
+
+.horizontal-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-div{
+    position: relative;
+    padding: 0 5% 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.payment-title, .payment-btn{
+    position: relative;
+    margin: 1rem 0;
+}
+
+
+
+.floating-icons{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+.floating-img{
+    position: relative;
+    width: 36px;
+    height: auto;
+    margin: .75rem;
+    filter: drop-shadow(2px -2px 10px rgba(0,0,0,0.2));
+    transition: all .3s ease;
+}
+.floating-img:hover{
+    transform: translateX(-5px);
+}
+
+
+/* Footer Styling Starts Here */
+
+footer{
+    position: relative;
+    margin-top: auto;
+    padding: 2rem 1rem 0;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-row{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-column{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.footer-heading{
+    position: relative;
+    margin-bottom: .5rem;
+    width: 100%;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .5s ease;
+}
+.down-arrow{
+    transform: rotateZ(-90deg);
+    transition: all .5s ease;
+}
+.footer-link{
+    position: relative;
+    margin-top: 0.75rem;
+    width: 100%;
+    color: aqua;
+}
+
+.footer-branding{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+}
+.footer-desc{
+    color: #FFF;
+    max-width: 75%;
+}
+
+.social-heading{
+    min-width: 100px;
+    color: #FFF;
+}
+.social{
+    position: relative;
+    width: 100%;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.social p{
+    text-align: center;
+    align-self: center;
+}
+
+
+
+
+#popup-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(40, 0, 75, 0.85);
+    backdrop-filter: blur(5px);
+    display: none;
+    place-content: center;
+    z-index: 100;
+}
+.popup{
+    position: relative;
+    padding: 1rem;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 24px;
+}
+.popup h1{
+    font-size: 2rem;
+}
+.popup p{
+    margin: 1rem;
+    font-size: 1rem;
+    color: darkslategray;
+}
+.popup img{
+    position: relative;
+    width: 300px;
+    height: auto;
+}
+.close-btn{
+    position: relative;
+    padding: .5rem 2.5rem;
+    font-size: .8rem;
+    color: #FFF !important;
+    text-transform: uppercase;
+    background: linear-gradient(120deg, blue, navy);
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .title-large{
+        font-size: 2.4rem;
+    }
+    .title-medium{
+        font-size: 1.5rem;
+    }
+    .title-medium--subheading{
+        font-size: 1rem;
+    }
+
+    nav{
+        height: 9.6vh;
+        padding: .9rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .logo-font{
+        font-size: 1.75rem;
+        font-weight: 400;
+    }
+    
+    .menu{
+        margin: .5rem 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #menu-alt{
+        display: unset;
+    }
+
+    .hero-btn1{
+        margin-top: .75rem;
+    }
+
+    .services-menu{
+        top: 6vh;
+        left: 26vw;
+        right:  unset;
+        width: 220px;
+    }
+
+    .floating-icons{
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .footer-row{
+        flex-direction: column;
+    }
+    .branding-column{
+        width: 80% !important;
+    }
+    .footer-column{
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .footer-desc{
+        max-width: 100%;
+    }
+
+
+    .popup{
+        width: 90vw;
+    }
+}
