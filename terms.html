@@ -28,7 +28,7 @@
 <body>
     <header>
         <nav id="nav">
-            <a href="index.html" class="nav-logo"><h1 class="logo-font">TrendBiz.</h1></a>
+            <div class="nav-logo"><h1 class="logo-font">TrendBiz.</h1></div>
             <div class="menu" id="menu">
                 <a href="index.html" class="menu-link">home</a>
                 <a href="#" class="menu-link" onmouseenter="openServices()">services
@@ -40,7 +40,8 @@
                 </a>
                 <a href="index.html#clients" class="menu-link">our clients</a>
                 <a href="index.html#aboutus" class="menu-link">about us</a>
-                <a href="index.html#contact"><p class="hero-btn1">Book A Call</p></a>
+                <form class="payment-btn"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JJCH9buLDEYsMu" async> </script> </form>
+                <a href="#contact"><p class="hero-btn1">Book A Call</p></a>
             </div>
             <svg id="menu-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24" onclick="toggleMenu()"><path id="menu-svg" d="M3,18H21M3,12H21M3,6H21" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
         </nav>
@@ -115,7 +116,7 @@
             </div>
             <div class="footer-column">
                 <div class="footer-heading"><h3>Important</h3><h4 class="down-arrow">&#x276E;</h4></div>
-                <a href="terms.html" class="footer-link">Refund Policy</a>
+                <a href="#" class="footer-link">Refund Policy</a>
                 <a href="policy.html" class="footer-link">Privacy Policy</a>
             </div>
         </div>
