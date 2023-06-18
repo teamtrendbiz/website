@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#111">
+    <meta name="theme-color" content="#111">
+    <title>TrendBiz - Home</title>
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WZ3N4KC');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+<body>
+
+    <iframe src="#" frameborder="0" id="hidden_iframe" name="hidden_iframe"></iframe>
+
+    <header>
+        <nav id="nav">
+            <div class="nav-logo"><h1 class="logo-font">TrendBiz.</h1></div>
+            <div class="menu" id="menu">
+                <a href="#" class="menu-link">home</a>
+                <a href="#" class="menu-link" onmouseenter="openServices()">services
+                    <div class="services-menu" id="servicesMenu" onmouseleave="closeServices()">
+                        <a href="dmarketing.html" class="services-link">Digital Marketing</a>
+                        <a href="smarketing.html" class="services-link">Social Media Management</a>
+                        <a href="webdev.html" class="services-link">Website Development</a>
+                    </div>
+                </a>
+                <a href="#clients" class="menu-link">our clients</a>
+                <a href="#aboutus" class="menu-link">about us</a>
+                <form class="payment-btn"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JJCH9buLDEYsMu" async> </script> </form>
+                <a href="#contact"><p class="hero-btn1">Book A Call</p></a>
+            </div>
+            <svg id="menu-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24" onclick="toggleMenu()"><path id="menu-svg" d="M3,18H21M3,12H21M3,6H21" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+        </nav>
+    </header>
+
+    <div class="container hero" id="hero" onmouseenter="closeServices()">
+        <div class="horizontal-wrapper hero-wrapper">
+            <div class="index-left">
+                <h1 class="hero-title">Marketing that brings <span style="color: #FFF;">results</span></h1>
+                <br>
+                <p class="hero-desc">We are a digital marketing company that aims to create brand awareness and bring more leads to our clients.<br>Let's grow together!</p>
+                <br><br>
+                <div class="hero-btns">
+                    <a href="#contact"><p class="hero-btn1">Book A Call</p></a>
+                    <a href="#"><div class="hero-btn2"><svg id="whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24"><path id="whatsapp-svg" d="M20.88,13.46A9,9,0,0,1,7.88,20L3,21l1-4.88a9,9,0,1,1,16.88-2.66ZM8.68,10.94,10.21,9.4,9.81,8H8s-.41,2.54,2.52,5.46S16,16,16,16V14.19l-1.4-.4-1.54,1.53" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>&nbsp;&nbsp;<p>Chat Now</p></div></a>
+                </div>
+            </div>
+            <div class="index-right"><img src="assets/img/hero-img.png" alt="TrendBiz" class="hero-img"></div>
+        </div>
+        
+    </div>
+    
+    <div class="extra-space"></div>
+    <div class="container">
+        <div class="title-div"><h1 class="title-large">Our Services</h1></div>
+        <div class="services-wrapper">
+            <div class="service-card">
+                <img src="assets/img/webdev.png" alt="Website Development" class="service-card-img" data-aos="fade-up">
+                <br>
+                <div class="service-card-info" data-aos="fade-up">
+                    <h2 class="service-card-title">Website Development</h2>
+                    <br>
+                    <p class="service-card-desc">
+                        Having a website and online presence strategy allows you to market your business online.
+                        A website is also important because it helps to establish credibility as a business.
+                        Websites usually provide a map and directions to the company’s shops or offices for visitors to find their location easily.
+                        <br>
+                        <strong>TrendBiz will develop a website for your business to give your business an unforgettable online presence.</strong>
+                        <br>
+                        <a href="webdev.html"><strong>Read More...</strong></a>
+                    </p>
+                </div>
+            </div>
+            <div class="service-card reversed-card">
+                <img src="assets/img/digitalmarketing.png" alt="Digital Marketing" class="service-card-img" data-aos="fade-up">
+                <br>
+                <div class="service-card-info" data-aos="fade-up">
+                    <h2 class="service-card-title">Digital Marketing</h2>
+                    <br>
+                    <p class="service-card-desc">
+                        <strong>Looking for Digital Marketing Companies in Bangalore?</strong>
+                        <br>
+                        We are one of the best digital marketiers in bangalore with a very young and dynamic team.<br>
+                        Digital marketing is extremely important in today’s era.
+                        It helps focus on targeted audiences with a global reach, unlike traditional marketing, bringing in high revenue with little investment.
+                        It is conversion-led and can easily be monitored. Damage control is also easy with digital marketing.
+                        <br>
+                        <a href="dmarketing.html"><strong>Read More...</strong></a>
+                    </p>
+                </div>
+            </div>
+            <div class="service-card"> 
+                <img src="assets/img/smanagement.png" alt="Social Media Management" class="service-card-img" data-aos="fade-up">
+                <br>
+                <div class="service-card-info" data-aos="fade-up">
+                    <h2 class="service-card-title">Social Media Marketing</h2>
+                    <br>
+                    <p class="service-card-desc">
+                        Social media allows marketers to connect and engage potential customers where they are at: 
+                        <strong>LinkedIn, Twitter, Youtube, Facebook, Instagram, and even some of the younger platforms like TikTok</strong>. 
+                        With a strong social media strategy and the ability to create engaging content, marketers can engage their audience.
+                        <br>
+                        <a href="smarketing.html"><strong>Read More...</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="aboutus">
+        <h1 data-aos="zoom-in">About Us</h1>
+        <br><br>
+        <p class="about-content">
+            Digital marketing is extremely important in today’s era.
+            We are one of the best digital marketiers in Bangalore with a very young and dynamic team.
+            We are a digital marketing company that aims to create brand awareness and bring more leads to our clients.
+            Our team also creates eye-catching graphic designs and user firendly websites for our clients.
+        </p>
+        <!-- <div class="team">
+            <div class="team-member">
+                <img src="assets/img/dmarkbg.jpg" class="member-img">
+                <br>
+                <strong><p>Sanjay</p></strong>
+                <p>Digital Marketer</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/img/sangam.png" class="member-img">
+                <br>
+                <strong><p>Sangam</p></strong>
+                <p>Web Developer</p>
+            </div>
+        </div> -->
+        <img src="assets/img/aboutbg.png" class="aboutbg">
+    </section>
+
+    <section class="clients-section" id="clients">
+        <h1 data-aos="zoom-out">Our Top Clients</h1>
+        <br><br>
+        <div class="clients-wrapper">
+            <img src="assets/img/cs.png" alt="Creative Smilez" class="client-img" data-aos="fade-up">
+            <img src="assets/img/pa.png" alt="Pace Academy" class="client-img" data-aos="fade-up">
+            <img src="assets/img/cl.png" alt="Centum Learning" class="client-img" data-aos="fade-up">
+            <img src="assets/img/munumunu.png" alt="Munu Munu Publications" class="client-img" data-aos="fade-up">
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h1 class="title-large">What Our Clients Say</h1>
+        <br><br>
+        <div class="clients-wrapper">
+            <figure class="snip1192">
+                <blockquote>
+                    I was impressed how quickly and swiftly the works were done. Looking forward to work with you guys again!
+                    <br>
+                    <div class="star-rating">&starf;&starf;&starf;&starf;&starf;</div>
+                </blockquote>
+                <div class="author">
+                  <img src="assets/img/user1.png" alt="sq-sample1"/>
+                  <h5 class="client-name">Hitesh KV</h5>
+                </div>
+            </figure>
+            <figure class="snip1192">
+                <blockquote>
+                    Awesome work! They're quick with whatever work they're given and the quality of the work is amazing!
+                    <br>
+                    <div class="star-rating">&starf;&starf;&starf;&starf;&starf;</div>
+                </blockquote>
+                <div class="author">
+                  <img src="assets/img/user2.png" alt="sq-sample1"/>
+                  <h5 class="client-name">Sangam Kumar</h5>
+                </div>
+            </figure>
+            <figure class="snip1192">
+                <blockquote>
+                    The quality of the services they are providing are second to none in terms of pricing. Must consider them.
+                    <br>
+                    <div class="star-rating">&starf;&starf;&starf;&starf;&starf;</div>
+                </blockquote>
+                <div class="author">
+                  <img src="assets/img/user3.png" alt="sq-sample1"/>
+                  <h5 class="client-name">Amit Sinha</h5>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <div class="payment-div">
+        <h1 class="payment-title">Make payments for your projects here</h1>
+        <form class="payment-btn"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JJCH9buLDEYsMu" async> </script> </form>
+    </div>
+
+    <div class="extra-space"></div>
+    <section>
+        <div class="contact-section">
+            <div class="contact-form-div" id="contact">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgHxWuEyRoTgwsCq7WUhpqFQH0XeBKCVuJKWi2sSoLzVB-mg/formResponse" class="contact-form" data-aos="slide-right" method="post" target="hidden_iframe" onsubmit="openPopup()">
+                    <h1 class="form-title">Get A Quote</h1>
+                    <br>
+                    <div class="contact-form-row">
+                        <label for="name">Name</label>
+                        <input type="text" name="entry.1348138681" id="name" placeholder="Samuel Singh">
+                    </div>
+                    <div class="contact-form-row">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="entry.937944991" id="phone" placeholder="9988776655">
+                    </div>
+                    <div class="contact-form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="entry.1270411312" id="email" placeholder="youremail@gmail.com">
+                    </div>
+                    <div class="contact-form-row">
+                        <textarea name="entry.2146793710" id="msg" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit"><svg id="send-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="20" height="20"><path id="send-svg" d="M3.69,8.75,19.61,3.06a1,1,0,0,1,1.33,1.33L15.25,20.31a1,1,0,0,1-1.95,0l-2.51-6.52a1,1,0,0,0-.6-.6L3.67,10.7A1,1,0,0,1,3.69,8.75Zm6.93,4.63,3-3" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>&nbsp;&nbsp;<p>SEND</p></button>
+                </form>
+            </div>
+            <div class="animation-section">
+                <h1 class="title-medium">Relax!<br><span class="title-medium--subheading">We're here to help you in this journey.</h1>
+                <br>
+                <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ak1sq2fq.json" class="animation"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+            </div>
+        </div>
+    </section>
+
+    <section id="popup-section">
+        <div class="popup">
+            <h1>Thank You!</h1>
+            <p>Our team has received your message, we'll get back to you soon.</p>
+            <img src="assets/img/popupimg.png" alt="Thank You!" class="popupimg">
+            <p class="close-btn" onclick="closePopup()">Close</p>
+        </div>
+    </section>
+
+    <div class="floating-icons">
+        <a href="tel:+918088500485" class="call-icon"><img src="assets/img/telephone.png" alt="Call" class="floating-img"></a>
+        <a href="https://wa.me/918088500485" class="whatsapp-icon"><img src="assets/img/whatsapp.png" alt="WhatsApp" class="floating-img"></a>
+        <a href="#" class="insta-icon"><img src="assets/img/instagram.png" alt="Instagram" class="floating-img"></a>
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-column branding-column">
+                <div class="footer-branding">
+                    <h2 class="brand-name logo-font">TrendBiz.</h2>
+                </div>
+                <br>
+                <p class="footer-desc">We are a digital marketing company that aims to create brand awareness and bring more leads to our clients.<br>Let's grow together!</p>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Company</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="#aboutus" class="footer-link">About Us</a>
+                <a href="#contact" class="footer-link"">Contact</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Services</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="webdev.html" class="footer-link">Website Development</a>
+                <a href="dmarketing.html" class="footer-link">Digital Marketing</a>
+                <a href="smarketing.html" class="footer-link">Social Media Management</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Important</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="terms.html" class="footer-link">Refund Policy</a>
+                <a href="policy.html" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer-row">
+            <div class="social">
+                <p>&copy; Copyright 2022 TrendBiz - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ3N4KC"
+            height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>

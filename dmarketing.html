@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#111">
+    <meta name="theme-color" content="#111">
+    <title>TrendBiz - Services</title>
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <iframe src="#" frameborder="0" id="hidden_iframe" name="hidden_iframe"></iframe>
+
+    <header>
+        <nav id="nav">
+            <div class="nav-logo"><h1 class="logo-font">TrendBiz.</h1></div>
+            <div class="menu" id="menu">
+                <a href="index.html" class="menu-link">home</a>
+                <a href="#" class="menu-link" onmouseenter="openServices()">services
+                    <div class="services-menu" id="servicesMenu" onmouseleave="closeServices()">
+                        <a href="dmarketing.html" class="services-link">Digital Marketing</a>
+                        <a href="smarketing.html" class="services-link">Social Media Management</a>
+                        <a href="webdev.html" class="services-link">Website Development</a>
+                    </div>
+                </a>
+                <a href="index.html#clients" class="menu-link">our clients</a>
+                <a href="index.html#aboutus" class="menu-link">about us</a>
+                <form class="payment-btn"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_JJCH9buLDEYsMu" async> </script> </form>
+                <a href="#contact"><p class="hero-btn1">Book A Call</p></a>
+            </div>
+            <svg id="menu-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="24" height="24" onclick="toggleMenu()"><path id="menu-svg" d="M3,18H21M3,12H21M3,6H21" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>
+        </nav>
+    </header>
+
+    <div class="hero" onmouseenter="closeServices()">
+        <div class="hero-container dmarkbg">
+            <div class="hero-content">
+                <h1>Digital Marketing</h1>
+                <p>Marketing that brings results!</p>
+            </div>
+            <div class="service-btns">
+                <a href="#service-contact-form" class="service-cta"><p>Contact Us</p></a>
+                <a href="#content" class="read-more"><p>Read More</p></a>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="title-div">
+        <h1 class="title-large">What Is Digital Marketing?</h1>
+    </div>
+
+    <div class="content-top">
+        <div class="card-wrapper">
+            <div class="card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="bi bi-translate"></i>
+                </div>
+                <h2 class="card-title">Keyword Research</h2>
+                <p class="card-desc">
+                    The foundation of a great SEO campaign starts by identifying the most effective keywords.
+                    We search and identify which words are most effective to reach your target audience.
+                </p>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="bi bi-clipboard-data-fill"></i>
+                </div>
+                <h2 class="card-title">Competitive Analysis</h2>
+                <p class="card-desc">
+                    We test the water before entering into it.
+                    Since many companies compete for similar keywords, we work upon other possibilities that will help you grow digitally.
+                </p>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="bi bi-file-earmark-plus-fill"></i>
+                </div>
+                <h2 class="card-title">Ad Copy</h2>
+                <p class="card-desc">
+                    We make highly eye-catching and attractive ad copies depending on the platform we use to market your product and serves.
+                    Book a call to see some of the ad copies we made..!
+                </p>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="bi bi-stars"></i>
+                </div>
+                <h2 class="card-title">Brand Awareness</h2>
+                <p class="card-desc">
+                    We create backlinks from well-established and high-quality websites that drive relevant traffic to your website and build authority in search engines like Google, Bing etc.
+                </p>
+            </div>
+        </div>
+    </div>
+        
+    <section id="content">
+
+        <div class="content-left">
+            <p data-aos="fade-right">
+                Like any other type of marketing, digital marketing is a way to connect with and influence your potential customers.
+                The difference is that you do so online through a combination of digital marketing channels that include video content, social media posts, content marketing, web and social media advertisements, and search engine marketing.
+                Companies reach goals through the above means instead of using traditional marketing strategies like billboards, television ads, and promotional mail sent to consumer residences.
+            </p>
+                <br><br>
+
+            <p data-aos="fade-right">
+                <strong>PAY-PER-CLICK ADVERTISING</strong>
+                <br>
+                Pay-per-click (PPC) advertising is a broad term that covers any online marketing where the advertising business pays for each time a user clicks on an ad. For example, Google AdWords is a form of PPC advertising called “paid search advertising.” Facebook Ads are another form of PPC advertising called “paid social media advertising.” 
+                <br><br>
+            </p>    
+            <p data-aos="fade-right">
+                <strong>PAID SEARCH ADVERTISING</strong>
+                <br>
+                Paid search advertising is one of the best ways to target potential customers actively searching for a product or service like yours. Google, Bing, and Yahoo allow you to run ads on their Search Engine Results Pages (SERPs).  
+
+                According to Google, 91% of users are searching from their mobile devices. All of your PPC and paid search advertising campaigns should be optimized for mobile so your business isn’t missing out on all of those clicks and potential customers. If you’re missing the mark on this, you need to revamp your digital marketing strategy ASAP. 
+                <br><br>
+            </p>
+            <p data-aos="fade-right">
+                <strong>PAID SOCIAL MEDIA ADVERTISING</strong>
+                <br>
+                Social media platforms like Facebook, Instagram, Twitter, LinkedIn, Pinterest, and Snapchat allow users to pay for digital media marketing ads on their sites. Paid social media advertising is great for building awareness with audiences who might not know that your business, product, or service exists.
+                <br><br>
+            </p>    
+            <p data-aos="fade-right">
+                <strong>SEARCH ENGINE OPTIMIZATION</strong>
+                <br>
+                Search Engine Optimization, commonly known as SEO, is the technique used by digital media marketing professionals to get pages and blog posts to rank organically on SERPs. It takes more skill and know-how to get on the front page of Google with SEO than with paid search advertising, and it can be time-consuming. 
+                <br><br>
+            </p>    
+            <p data-aos="fade-right">
+                <strong>SOCIAL MEDIA MARKETING</strong>
+                <br>
+                Like SEO, social media marketing is the free, organic way to use platforms like Facebook or Twitter to market your business through digital means. Unfortunately, organically marketing your business on social media takes more time and effort than paid advertising. Still, it can be very effective when you’re operating on a tighter budget. Social media marketing is one of the best digital marketing strategies you can use, even if you don’t pay for it. 
+                <br><br>
+            </p>    
+            <p data-aos="fade-right">
+                <strong>CONVERSION RATE OPTIMIZATION</strong>
+                <br>
+                Conversion rate optimization (CRO) improves the online user experience to maximize the number of users who perform a desired action known as converting. This can be as simple as getting them to click on a link and sign up for your newsletter. Businesses often use CRO to get leads, chats, calls, and sales from their existing website traffic and increase those conversions.
+                <br><br>
+            </p>    
+            <p data-aos="fade-right">
+                <strong>CONTENT MARKETING</strong>
+                <br>
+                Content marketing is another broad digital marketing term. Content marketing covers any digital marketing effort that uses content assets (blog posts, infographics, eBooks, videos, etc.) to build brand awareness or drive clicks, leads, or sales. Most importantly, when you combine these elements the right way, you develop a clear online marketing strategy for your business. 
+                <br><br>
+            </p>
+            <p data-aos="fade-right"> 
+                <strong>EMAIL MARKETING</strong>
+                <br>
+                Email marketing is the oldest form of online marketing, and it’s still going strong. Most digital marketers use it for advertising special deals, highlighting content, or promoting an event. It offers opportunities to reach users who may not be on many of the more popular platforms, like social media.
+                <br><br>
+            </p>
+        </div>
+
+        <div class="content-right" id="service-contact-form">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScgHxWuEyRoTgwsCq7WUhpqFQH0XeBKCVuJKWi2sSoLzVB-mg/formResponse" class="services-page-form" method="post" target="hidden_iframe" onsubmit="openPopup()">
+                <h1 class="form-title">Get A Quote</h1>
+                <br>
+                <div class="contact-form-row">
+                    <label for="name">Name</label>
+                    <input type="text" name="entry.1348138681" id="name" placeholder="Samuel Singh">
+                </div>
+                <div class="contact-form-row">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="entry.937944991" id="phone" placeholder="9988776655">
+                </div>
+                <div class="contact-form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="entry.1270411312" id="email" placeholder="youremail@gmail.com">
+                </div>
+                <div class="contact-form-row">
+                    <textarea name="entry.2146793710" id="msg" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+                </div>
+                <button type="submit" class="form-submit"><svg id="send-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="20" height="20"><path id="send-svg" d="M3.69,8.75,19.61,3.06a1,1,0,0,1,1.33,1.33L15.25,20.31a1,1,0,0,1-1.95,0l-2.51-6.52a1,1,0,0,0-.6-.6L3.67,10.7A1,1,0,0,1,3.69,8.75Zm6.93,4.63,3-3" style="stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg>&nbsp;&nbsp;<p>SEND</p></button>
+            </form>
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_um8dbzhc.json" class="animation marketingimg"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+        </div>
+    </section>
+    
+    <section id="popup-section">
+        <div class="popup">
+            <h1>Thank You!</h1>
+            <p>Our team has received your message, we'll get back to you soon.</p>
+            <img src="assets/img/popupimg.png" alt="Thank You!" class="popupimg">
+            <p class="close-btn" onclick="closePopup()">Close</p>
+        </div>
+    </section>
+
+    <div class="floating-icons">
+        <a href="tel:+918088500485"><img src="assets/img/telephone.png" alt="Call" class="floating-img"></a>
+        <a href="https://wa.me/918088500485"><img src="assets/img/whatsapp.png" alt="WhatsApp" class="floating-img"></a>
+        <a href="#"><img src="assets/img/instagram.png" alt="Instagram" class="floating-img"></a>
+    </div>
+
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-column branding-column">
+                <div class="footer-branding">
+                    <h2 class="brand-name logo-font">TrendBiz.</h2>
+                </div>
+                <br>
+                <p class="footer-desc">We are a digital marketing company that aims to create brand awareness and bring more leads to our clients.<br>Let's grow together!</p>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Company</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="index.html#aboutus" class="footer-link">About Us</a>
+                <a href="index.html#contact" class="footer-link"">Contact</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Services</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="webdev.html" class="footer-link">Website Development</a>
+                <a href="dmarketing.html" class="footer-link">Digital Marketing</a>
+                <a href="smarketing.html" class="footer-link">Social Media Management</a>
+            </div>
+            <div class="footer-column">
+                <div class="footer-heading"><h3>Important</h3><h4 class="down-arrow">&#x276E;</h4></div>
+                <a href="terms.html" class="footer-link">Refund policy</a>
+                <a href="policy.html" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer-row">
+            <div class="social">
+                <p>&copy; Copyright 2022 TrendBiz - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos.js"></script>
+</body>
+</html>
