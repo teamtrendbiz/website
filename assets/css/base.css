@@ -85,7 +85,7 @@ header{
 
 nav{
     position: relative;
-    padding: .75rem 3rem;
+    padding: 1rem 2rem;
     width: 100%;
     height: auto;
     display: flex;
@@ -123,8 +123,8 @@ nav{
 
 .services-menu{
     position: absolute;
-    top: 8vh;
-    right: 20vw;
+    top: 10vh;
+    right: 35vw;
     padding-bottom: 1rem;
     width: 280px;
     height: auto;
